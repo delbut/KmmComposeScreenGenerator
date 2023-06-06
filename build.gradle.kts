@@ -10,6 +10,7 @@ plugins {
     id("org.jetbrains.compose").version(Versions.compose_multiplatform).apply(false)
 }
 
+tasks.register<GenerateScreen>("generate")
 tasks.register("clean", Delete::class) {
     delete(rootProject.buildDir)
 }
